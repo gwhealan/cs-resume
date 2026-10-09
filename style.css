@@ -1,0 +1,101 @@
+:root {
+    --bg-color-light: #E8E9EB;
+    --bg-color-dark: #313638;
+    --fg-color-light: #E0DFD5;
+    --fg-color-dark: #313638;
+    --accent-light: #F09D51;
+    --accent-dark: #F06543;
+}
+
+* {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    width: fit-content;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 2em;
+}
+
+.pal-normal {
+    color: var(--fg-color-dark);
+    background-color: var(--bg-color-light);
+    border-color: var(--accent-dark);
+}
+
+.pal-dark {
+    color: var(--fg-color-light);
+    background-color: var(--bg-color-dark);
+    border-color: var(--accent-light);
+}
+
+.align-middle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul.flex, ol.flex {
+    list-style: none;
+}
+
+.flex-middle {
+    justify-content: center;
+}
+
+.card {
+    display: block;
+    padding: 0.5em 0.75em;
+    margin: 0.125em 1em;
+    border-radius: 2em;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+}
+
+.header {
+    width: 100%;
+    border-width: 0 0 3px 0;
+    border-style: solid;
+    border-color: inherit;
+    margin-bottom: 0.5em;
+}
+
+.pal-normal-card {
+    color: var(--fg-color-dark);
+    background-color: var(--accent-light);
+}
+
+.pal-dark-card {
+    color: var(--fg-color-light);
+    background-color: var(--accent-dark);
+}
+
+a.pal-dark-card:hover {
+    color: var(--fg-color-dark);
+    background-color: var(--accent-light);
+}
+
+.tabulate {
+    margin-left: 1em
+}
